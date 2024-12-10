@@ -1,0 +1,204 @@
+/* General Reset and Body Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+header a:hover {
+    background-color: #e67e22;
+}
+
+/* Menu Section */
+.menu {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    color: #bd6619;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #bd6619;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e67e22;;
+}
+
+/* Order Form Section */
+.order-form {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.order-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 12px;
+    background-color: #bd6619;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Cart Summary Section */
+#cartSummary {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cartSummary h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#cartItems li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#totalAmount {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Menu Item Image Styling */
+.menu-item img {
+    width: 100%;  /* Makes the image fill its container width */
+    height: 250px;  /* Sets a fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the area without stretching */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

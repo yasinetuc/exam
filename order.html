@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Delivery</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<header>
+    <h1>Seafood Delivery Service</h1>
+    <p>Fresh seafood delivered right to your doorstep!</p>
+    <a href="mainpage.html">HOME</a>
+</header>
+
+<div class="menu">
+    <!-- Main Dishes -->
+    <h2>Main Dishes</h2>
+    <div class="menu-item">
+        <img src="https://www.foxyfolksy.com/wp-content/uploads/2021/04/cajun-seafood-boil-recipe.jpg" alt="Cajun Seafood Boil">
+        <h3>Cajun Seafood Boil</h3>
+        <p>₱175.00 per lb</p>
+        <button class="button" onclick="addToCart('Cajun Seafood Boil', 175.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://preview.redd.it/m0w6ageyhes41.jpg?width=1080&crop=smart&auto=webp&s=5d90d7f8b733db26d9aeef239ea40760fe77e525" alt="Crawfish Boil">
+        <h3>Crawfish Boil</h3>
+        <p>₱150.00 per lb</p>
+        <button class="button" onclick="addToCart('Crawfish Boil', 150.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://gulfcoastblenders.com/wp-content/uploads/2021/03/Salvos-Complete-Seafood-Boil.png" alt="Salvo's">
+        <h3>Salvo's</h3>
+        <p>₱165.00 per lb</p>
+        <button class="button" onclick="addToCart('Salvos', 165.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://ciaoflorentina.com/wp-content/uploads/2015/07/Garlic-Scallops-Healthy-4.jpg" alt="Garlic Scallops">
+        <h3>Garlic Scallops</h3>
+        <p>₱110.00 per lb</p>
+        <button class="button" onclick="addToCart('Garlic Scallops', 110.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://cookingwithremi.com/img/containers/assets/recipes/main/kim_thai_at_home_cajun_seafood_boil.png/fd52a15d5103d3dcc227d1290896f0d0.webp" alt="Cajun King Crab">
+        <h3>Cajun King Crab</h3>
+        <p>₱190.00 per lb</p>
+        <button class="button" onclick="addToCart('Cajun King Crab', 190.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://i0.wp.com/www.wokandkin.com/wp-content/uploads/2020/10/Braised-Abalone-with-Mushrooms-saved-for-web.png?w=600&ssl=1" alt="Braised Abalone With Mushroom">
+        <h3>Braised Abalone With Mushroom</h3>
+        <p>130.00 per lb</p>
+        <button class="button" onclick="addToCart('Braised Abalone With Mushroom', 130.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://www.butterbeready.com/wp-content/uploads/2023/06/DK6A2462-768x1152.jpg" alt="Cajun Seafood Boil with garlic butter Sauce">
+        <h3>Cajun Seafood Boil with Garlic Butter Sauce</h3>
+        <p>₱165.00 per lb</p>
+        <button class="button" onclick="addToCart('Cajun Seafood Boil with Garlic Butter Sauce', 165.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://i.pinimg.com/originals/38/4a/35/384a3590a12e73f7fafbb0e50b6c1fcc.jpg" alt="Grilled oysters with spicy garlic butter and parmesan bread crumbs">
+        <h3>Grilled oysters with spicy garlic butter and parmesan bread crumbs</h3>
+        <p>₱195.00 per lb</p>
+        <button class="button" onclick="addToCart('Grilled oysters with spicy garlic butter and parmesan bread crumbs', 195.00)">Add to Cart</button>
+    </div>
+
+    <!-- Side Dishes -->
+    <h2>Side Dishes</h2>
+    <div class="menu-item">
+        <img src="https://www.ncseafood.com/cms/wp-content/uploads/2020/10/side-dishes-for-seafood-768x1024.jpg" alt="Garlic & Herb Linguine Pasta">
+        <h3>Garlic & Herb Linguine Pasta</h3>
+        <p>₱85.00</p>
+        <button class="button" onclick="addToCart('Garlic & Herb Linguine Pasta', 85.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/12/seafood-salad-4.jpg" alt="Shrimp Salad">
+        <h3>Shrimp Salad</h3>
+        <p>₱85.00</p>
+        <button class="button" onclick="addToCart('Shrimp Salad', 85.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://www.myeclecticbites.com/wp-content/uploads/2019/12/Vegan-Green-Sushi-10-768x1152.jpg" alt="Garlic Bread">
+        <h3>Vegan Green Sushi</h3>
+        <p>₱120.00</p>
+        <button class="button" onclick="addToCart('Vegan Green Sushi', 120.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://futuredish.com/wp-content/uploads/2017/12/Korean-Grilled-Squid-Medium4.jpg" alt="Steamed Vegetables">
+        <h3>Grilled Squid</h3>
+        <p>135.00</p>
+        <button class="button" onclick="addToCart('Grilled Squid', 135.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://theforkedspoon.com/wp-content/uploads/2023/05/Tteokbokki-46-1365x2048.jpg" alt="Steamed Rice">
+        <h3>Tteokbokki</h3>
+        <p>₱115.00</p>
+        <button class="button" onclick="addToCart('Tteokbokki', 115.00)">Add to Cart</button>
+    </div>
+
+    <!-- Drinks -->
+    <h2>Drinks</h2>
+    <div class="menu-item">
+        <img src="https://chocolatecoveredkatie.com/wp-content/uploads/2019/07/EASY-Creamy-Avocado-Smoothie-Recipe.jpg" alt="Cola">
+        <h3>Avocado Smoothie</h3>
+        <p>₱150.00</p>
+        <button class="button" onclick="addToCart('Avocado Smoothie', 150.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.9UOYvFBa2rYqGGPcxI0c1QHaHa&pid=Api&P=0&h=180" alt="Iced Tea">
+        <h3>Iced Tea</h3>
+        <p>₱150. </p>
+        <button class="button" onclick="addToCart('Iced Tea', 150.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyH39HR_yRAL1nRXnhO0-9LYEr6qmwdGAkKTUF7oazYJnE5ME6vGRlqwXoTZ_mBNHzU90&usqp=CAU" alt="Lemonade">
+        <h3>Banana Smoothie</h3>
+        <p>150.00</p>
+        <button class="button" onclick="addToCart('Banana Smoothie<', 150.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.fad8AcrV33l-NIM3XCOZywHaJQ&pid=Api&P=0&h=180" alt="Water">
+        <h3>Pineapple Smoothie</h3>
+        <p>150.00</p>
+        <button class="button" onclick="addToCart('Pineapple Smoothie Water', 150.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStT03ZpP19s5O-t3U2qeyk4tYk4kklT5LlDriU78TG0Cbv16XouFNp-ahSCLtRQN-BMaM&usqp=CAU" alt="Beer">
+        <h3>Chocolate Milkshake With Ice Cream on top<h3>
+        <p>₱150.00</p>
+        <button class="button" onclick="addToCart('Chocolate Milkshake With Ice Cream on top', 150.00)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="order-form">
+    <h2>Order Your Seafood</h2>
+    <form id="orderForm" onsubmit="placeOrder(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="cellphone">Cellphone No.:</label>
+        <input type="number" id="cellphone" name="cellphone" required min="11">
+        
+        <button type="submit" class="button">Place Order</button>
+    </form>
+</div>
+
+<div id="cartSummary">
+    <h2>Cart Summary</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalAmount">Total: ₱0.00</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Seafood Delivery Service | All Rights Reserved</p>
+</footer>
+
+<script>
+// Initialize cart
+let cart = [];
+
+// Add item to cart
+function addToCart(item, price) {
+    const existingItem = cart.find(i => i.name === item);
+
+    if (existingItem) {
+        existingItem.quantity += 1; // Increase quantity if item already exists
+    } else {
+        cart.push({ name: item, price: price, quantity: 1 }); // Add new item with quantity 1
+    }
+
+    updateCart(); // Update cart and display the total cost
+}
+
+// Update cart display and calculate total cost
+function updateCart() {
+    const cartItemsList = document.getElementById('cartItems');
+    const totalAmount = document.getElementById('totalAmount');
+    
+    cartItemsList.innerHTML = ''; // Clear the current list
+    let total = 0;
+
+    // Populate cart and calculate total
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ₱${item.price} x ${item.quantity}`;
+        cartItemsList.appendChild(listItem);
+        total += item.price * item.quantity; // Update total cost
+    });
+
+    totalAmount.textContent = `Total: ₱${total.toFixed(2)}`; // Show the total cost
+}
+
+// Handle order form submission
+function placeOrder(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get user inputs
+    const name = document.getElementById('name').value;
+    const address = document.getElementById('address').value;
+    const cellphone = document.getElementById('cellphone').value;
+
+    if (cart.length === 0) {
+        alert("Your cart is empty. Please add some items to your cart before ordering.");
+        return;
+    }
+
+    // Display order details in a confirmation alert
+    let orderDetails = `Order Placed!\nName: ${name}\nAddress: ${address}\nCellphone No.: ${cellphone}\nItems:\n`;
+    cart.forEach(item => {
+        orderDetails += `${item.name} - ₱${item.price} x ${item.quantity}\n`;
+    });
+    orderDetails += `Total: ₱${calculateTotal()}`;
+
+    alert(orderDetails);
+
+    // Clear cart after order is placed
+    cart = [];
+    updateCart(); // Reset cart display
+    document.getElementById('orderForm').reset(); // Reset the form
+}
+
+// Calculate total cost of the cart
+function calculateTotal() {
+    return cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+}
+</script>
+
+</body>
+</html>
